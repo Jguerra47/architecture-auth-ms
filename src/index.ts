@@ -14,7 +14,7 @@ createConnection().then(async () => {
     app.use(express.json());
     app.use(cors({
         credentials: true,
-        origin: ["https://architecture-react-ambassador.vercel.app"]
+        origin: ["https://architecture-react-ambassador.vercel.app","https://architecture-next-checkout.vercel.app/" ]
     }));
 
     routes(app);
